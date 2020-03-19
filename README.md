@@ -1,2 +1,13 @@
 # math-dlmf-dataset
-A twin math dataset consisting of a per-expression data subset, and Simple-XML data subset (with marked-up sentences and marked-up math)
+A twin math dataset consisting of a per-expression data subset, and Simple-XML data subset (with marked-up sentences and marked-up math). 
+
+This twin dataset is derived from the Digital Library of Mathematical Functions (DLMF) of NIST (see http://dlmf.nist.gov)
+
+The per-expression data subset is structured and labeled at fine granularity. For each math equation or expression in the DLMF, there is a record that provides a number of related elements, both contextual and annotational. The Simple-XML data subset consists of "Simple XML" files, where the contents of each Simple XML file are organized as marked-up sentences within the marked-up hierarchy of paragraphs/subsections/sections inherited form the original DLMF XML files (derived from LaTeX source files using the Bruce Miller's LaTeXML tool). Each sentence consists of its text and math XML-elements with their own unique IDs. 
+
+The per-expression data subset is organized by records, one per equation and one per mathematical expression. Each equation-record starts with the keyword "Equation" and ends with the keyword "End-equation" on separate lines, and has separate fields, where each field is a name:value pair. The name of each field is a meaningful string, and the value is a text string that can be a LATEX encoding, an ID, or a sequence of name:value fields. The record of an expression is identical to that of an equation except that it starts with the keyword Expression, ends with the keyword End-expression, and does not have the following fields: equation-number, permalink, constraints, symbols-used, and symbols-defined.
+
+The full context of each equation or expression is easily and quickly derivable from the twin datasets, which enables users to identify and fully extract the sentence containing a given equation/expression, as well as neighboring sentences
+or full paragraphs, for contextualized processing needed in many mth language processing (MLP) tasks.
+
+In the Simple-XML data subset, each section of the DLMF is a lean XML file, structured as a tree of section and subsections. Each subsection consists of paragraphs, and each paragraph is a sequence of marked-up sentences that contain text and/or marked-up math elements. Each sentence element has valuable XML attributes, including the xml-id attribute of the sentence.
