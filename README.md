@@ -31,7 +31,7 @@ Both twin datasets have a directory structure that mirrors the directory structu
 <table style="width:100%">
   <caption><b>Table 2</b>: Names, values and explanations of the <b>context</b> fields of equation records.</caption>
 <tr><th> Field Name </th> <th>Field Value and its Explanation</th> </tr>
-<tr> <td> sentence-xmlid </td> <td>  a unique sentence ID within the \textit{Simple-XML} files of the DLMF </td> </tr>
+  <tr> <td> sentence-xmlid </td> <td>  a unique sentence ID within the <i>Simple-XML</i> files </td> </tr>
 <tr> <td> sentence-num-in-section </td> <td>  the in-section number of the sentence containing the equation </td> </tr>
 <tr> <td> sentence-num-in-chapter </td> <td>  the in-chapter number of the sentence containing the equation </td> </tr>
 <tr> <td> sentence-num-in-corpus </td> <td>  the in-corpus number of the sentence containing the equation </td> </tr>
@@ -50,9 +50,17 @@ Both twin datasets have a directory structure that mirrors the directory structu
 <table style="width:100%">
   <caption><b>Table 3</b>: Attribute names and values of the sentence element in Simple XML files.</caption>
 <tr><th> Attribute Name </th> <th>Attribute Value and its Explanation</th> </tr>
-<tr> <td> xml:id </td> <td>  a unique sentence ID within the \textit{Simple-XML} files of the DLMF </td> </tr>
+<tr> <td> xml:id </td> <td>  a unique sentence ID within the <i>Simple-XML</i> files  </td> </tr>
 <tr> <td> sentence-num-in-para </td> <td>  the number of the sentence in its <i>physical<i> paragraph </td> </tr>
 <tr> <td> sentence-num-in-section </td> <td>  the number of the sentence in its section</td> </tr>
+</table>
+  
+<table style="width:100%">
+<caption><b>Table 4</b>: Attribute names and values of the Math element in Simple XML files.</caption>
+<tr><th> Attribute Name </th> <th>Attribute Value and its Explanation</th> </tr>
+<tr> <td> mode </td> <td> The value is "inline" for unnumbered math expressions, and "display" for numbered equations</td> </tr>
+<tr> <td> xml:id </td> <td>  a unique ID of the math expression/equation within the <i>Simple-XML</i> files  </td> </tr>
+<tr> <td> equation-number </td> <td> the unique equation number of the equation in DLMF, if the Math element is a numbered equation </td> </tr>
 </table>
 
 
