@@ -47,6 +47,14 @@ Both twin datasets have a directory structure that mirrors the directory structu
 <tr> <td> chapter-title </td> <td>  the title of the chapter containing the equation </td> </tr>
 </table>
 
+<table style="width:100%">
+  <caption><b>Table 3</b>: Attribute names and values of the sentence element in Simple XML files.</caption>
+<tr><th> Attribute Name </th> <th>Attribute Value and its Explanation</th> </tr>
+<tr> <td> xml:id </td> <td>  a unique sentence ID within the \textit{Simple-XML} files of the DLMF </td> </tr>
+<tr> <td> sentence-num-in-para </td> <td>  the number of the sentence in its <i>physical<i> paragraph </td> </tr>
+<tr> <td> sentence-num-in-section </td> <td>  the number of the sentence in its section</td> </tr>
+</table>
+
 
 
 
