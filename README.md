@@ -8,7 +8,7 @@ The per-expression data subset, residing in <a href="https://github.com/abdouyou
 The per-expression data subset is organized by records, one per equation and one per mathematical expression. Each equation-record starts with the keyword "Equation" and ends with the keyword "End-equation" on separate lines, and has separate fields, where each field is a name:value pair. The name of each field is a meaningful string, and the value is a text string that can be a LATEX encoding, an ID, or a sequence of name:value fields. The fields' names and values are described in <A href="#tab1">
 Tables 1</A> and <A href="#tab2">2</A> below. The record of an expression is identical to that of an equation except that it starts with the keyword Expression, ends with the keyword End-expression, and does not have the following fields: equation-number, permalink, constraints, symbols-used, and symbols-defined.
 
-In the Simple-XML data subset, each section of the DLMF is a lean XML file, structured as a tree of section and subsections. Each subsection consists of paragraphs, and each paragraph is a sequence of marked-up sentences that contain text and/or marked-up math elements. Each sentence element has valuable XML attributes, including the xml-id attribute of the sentence. The attributes of the sentence element and of the Math element are explained below in Tables 3 and 4, respectively. 
+In the Simple-XML data subset, each section of the DLMF is a lean XML file, structured as a tree of section and subsections. Each subsection consists of paragraphs, and each paragraph is a sequence of marked-up sentences that contain text and/or marked-up math elements. Each sentence element has valuable XML attributes, including the xml-id attribute of the sentence. The attributes of the sentence element and of the Math element are explained below in <A href="#tab3">Tables 3<A> and <A href="#tab4">4</A>, respectively. 
 
 Both twin datasets have a directory structure that mirrors the directory structure of the DLMF, that is, each chapter is a directory of files, one file per section, where the chapters are numbered 1-36, and the section files also have numeric names. For example, file "2.3.txt" in the per-expression data subset is the (text) file corresponding to Section 3 of Chapter 2, and containing the records of the equations and math expressions of Section 3 of Chapter 2 of the DLMF. Similarly, file "2.3.xml" in the Simple-XML data subset is the lean sentence-oriented XML file corresponding to the contents of <a href="https://dlmf.nist.gov/2.3">Section 3 of Chapter 2</a> of the DLMF.
 
@@ -49,7 +49,7 @@ Both twin datasets have a directory structure that mirrors the directory structu
 </table>
 
 <table style="width:100%">
-  <caption><b>Table 3</b>: Attribute names and values of the sentence element in Simple XML files</caption>
+  <caption><A name="tab3"><b>Table 3</b></A>: Attribute names and values of the sentence element in Simple XML files</caption>
 <tr><th> Attribute Name </th> <th>Attribute Value and its Explanation</th> </tr>
 <tr> <td> xml:id </td> <td>  a unique sentence ID within the <i>Simple-XML</i> files  </td> </tr>
 <tr> <td> sentence-num-in-para </td> <td>  the number of the sentence in its <i>physical<i> paragraph </td> </tr>
@@ -57,7 +57,7 @@ Both twin datasets have a directory structure that mirrors the directory structu
 </table>
   
 <table style="width:100%">
-<caption><b>Table 4</b>: Attribute names and values of the Math element in Simple XML files</caption>
+  <caption><A name="tab"><b>Table 4</b></A>: Attribute names and values of the Math element in Simple XML files</caption>
 <tr><th> Attribute Name </th> <th>Attribute Value and its Explanation</th> </tr>
 <tr> <td> mode </td> <td> the value is "inline" for unnumbered math expressions, and "display" for numbered equations</td> </tr>
 <tr> <td> xml:id </td> <td>  a unique ID of the math expression/equation within the <i>Simple-XML</i> files  </td> </tr>
