@@ -1,5 +1,5 @@
 # math-dlmf-dataset
-A twin math dataset consisting of a per-expression data subset, and Simple-XML data subset (with marked-up sentences and marked-up math). 
+This is a twin math dataset consisting of a per-expression data subset, and Simple-XML data subset (with marked-up sentences and marked-up math). 
 
 This twin dataset is derived from the <a href="http://dlmf.nist.gov"> Digital Library of Mathematical Functions</a> (DLMF) of <a href="http://www.nist.gov">NIST</a>.
 
