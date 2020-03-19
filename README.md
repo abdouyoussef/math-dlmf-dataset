@@ -65,5 +65,5 @@ Both twin datasets have a directory structure that mirrors the directory structu
 </table>
 
 
-The full context of each equation or expression is easily and quickly derivable from the twin datasets, which enables users to identify and fully extract the sentence containing a given equation/expression, as well as neighboring sentences
+The full context of each equation or expression can be easily and quickly derivable from the twin datasets, which enables users to identify and fully extract the sentence containing a given equation/expression, as well as neighboring sentences
 or full paragraphs, for contextualized processing needed in many math language processing (MLP) tasks.
