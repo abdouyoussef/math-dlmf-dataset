@@ -11,6 +11,22 @@ In the Simple-XML data subset, each section of the DLMF is a lean XML file, stru
 
 Both twin datasets have a directory structure that mirrors the directory structure of the DLMF, that is, each chapter is a directory of files, one file per section, where the chapters are numbered 1-36, and the section files also have numeric names. For example, file "2.3.txt" in per-expression data subset is the (text) file corresponding to Section 3 of Chapter 2, and containing the records of the equations and math expressions of Section 3 of Chapter 2 of the DLMF. Similarly, file "2.3.xml" in the Simple-XML data subset is the lean sentence-oriented XML file corresponding to the contents of <a href="https://dlmf.nist.gov/2.3">Section 3 of Chapter 2</a> of the DLMF.
 
+<table style="width:100%">
+<tr><th> \textbf{Field Name} </th> <th> \textbf{Field Value and its Explanation} </th> </tr>
+<tr> <td> equation-number </td> <td> the unique equation number of the equation in DLMF    </td> </tr>
+<tr> <td> permalink </td> <td> a unique URL of the equation </td> </tr>
+<tr> <td> xml-id </td> <td> a unique XML ID of the equation within the DLMF  </td> </tr>
+<tr> <td> tex </td> <td> \LaTeX encoding of the equation, surrounded with double dollar signs </td> </tr>
+<tr> <td> content-tex </td> <td> \LaTeX encoding of the equation, but using DLMF-defined semantic Latex macros </td> </tr>
+<tr> <td> constraints </td> <td> a number of name:value fields encoding the constraints of the equation, if any, in both \LaTeX and content-tex </td> </tr> 
+<tr> <td> symbols-defined </td> <td> a number of name:value fields where the name is "symbol", and the value is in turn a number of name:value fields encoding and describing a math symbol in the equation, where the description gives the meaning of the symbol, which can be viewed as a symbol label in the ML sense </td> </tr>
+<tr> <td> symbols-used </td> <td> similar to the symbols-defined values above, except that each symbol has an additional idref:value field where the latter value provides the ID where the original definition of that symbol is located in the DLMF</td> </tr>
+<tr> <td> meaning </td> <td> the meaning or role of the symbol in question </td> </tr>
+<tr> <td> idref </td> <td> a unqiue ID reference to the location where a symbol is initially defined in the DLMF </td> </tr>
+<tr> <td> context </td> <td> a number of name:value fields that provide context-identifying references and titles of the textual units containing the equation, such as subsection and section titles, as detailed in Table~\ref{tab:context}</td> </tr>
+</table>
+
+
 
 The full context of each equation or expression is easily and quickly derivable from the twin datasets, which enables users to identify and fully extract the sentence containing a given equation/expression, as well as neighboring sentences
 or full paragraphs, for contextualized processing needed in many mth language processing (MLP) tasks.
