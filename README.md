@@ -12,7 +12,7 @@ In the Simple-XML data subset, each section of the DLMF is a lean XML file, stru
 Both twin datasets have a directory structure that mirrors the directory structure of the DLMF, that is, each chapter is a directory of files, one file per section, where the chapters are numbered 1-36, and the section files also have numeric names. For example, file "2.3.txt" in per-expression data subset is the (text) file corresponding to Section 3 of Chapter 2, and containing the records of the equations and math expressions of Section 3 of Chapter 2 of the DLMF. Similarly, file "2.3.xml" in the Simple-XML data subset is the lean sentence-oriented XML file corresponding to the contents of <a href="https://dlmf.nist.gov/2.3">Section 3 of Chapter 2</a> of the DLMF.
 
 <table style="width:100%">
-  <caption><b>Table 1</b>: Names, values and explanations of the fields of equation records.</caption>
+  <caption><b>Table 1</b>: Names, values and explanations of the fields of equation records</caption>
 <tr><th> Field Name </th> <th> Field Value and its Explanation </th> </tr>
 <tr> <td> equation-number </td> <td> the unique equation number of the equation in DLMF    </td> </tr>
 <tr> <td> permalink </td> <td> a unique URL of the equation </td> </tr>
@@ -29,7 +29,7 @@ Both twin datasets have a directory structure that mirrors the directory structu
 
 
 <table style="width:100%">
-  <caption><b>Table 2</b>: Names, values and explanations of the <b>context</b> fields of equation records.</caption>
+  <caption><b>Table 2</b>: Names, values and explanations of the <b>context</b> fields of equation records</caption>
 <tr><th> Field Name </th> <th>Field Value and its Explanation</th> </tr>
   <tr> <td> sentence-xmlid </td> <td>  a unique sentence ID within the <i>Simple-XML</i> files </td> </tr>
 <tr> <td> sentence-num-in-section </td> <td>  the in-section number of the sentence containing the equation </td> </tr>
@@ -48,7 +48,7 @@ Both twin datasets have a directory structure that mirrors the directory structu
 </table>
 
 <table style="width:100%">
-  <caption><b>Table 3</b>: Attribute names and values of the sentence element in Simple XML files.</caption>
+  <caption><b>Table 3</b>: Attribute names and values of the sentence element in Simple XML files</caption>
 <tr><th> Attribute Name </th> <th>Attribute Value and its Explanation</th> </tr>
 <tr> <td> xml:id </td> <td>  a unique sentence ID within the <i>Simple-XML</i> files  </td> </tr>
 <tr> <td> sentence-num-in-para </td> <td>  the number of the sentence in its <i>physical<i> paragraph </td> </tr>
@@ -56,15 +56,13 @@ Both twin datasets have a directory structure that mirrors the directory structu
 </table>
   
 <table style="width:100%">
-<caption><b>Table 4</b>: Attribute names and values of the Math element in Simple XML files.</caption>
+<caption><b>Table 4</b>: Attribute names and values of the Math element in Simple XML files</caption>
 <tr><th> Attribute Name </th> <th>Attribute Value and its Explanation</th> </tr>
-<tr> <td> mode </td> <td> The value is "inline" for unnumbered math expressions, and "display" for numbered equations</td> </tr>
+<tr> <td> mode </td> <td> the value is "inline" for unnumbered math expressions, and "display" for numbered equations</td> </tr>
 <tr> <td> xml:id </td> <td>  a unique ID of the math expression/equation within the <i>Simple-XML</i> files  </td> </tr>
 <tr> <td> equation-number </td> <td> the unique equation number of the equation in DLMF, if the Math element is a numbered equation </td> </tr>
 </table>
 
 
-
-
 The full context of each equation or expression is easily and quickly derivable from the twin datasets, which enables users to identify and fully extract the sentence containing a given equation/expression, as well as neighboring sentences
-or full paragraphs, for contextualized processing needed in many mth language processing (MLP) tasks.
+or full paragraphs, for contextualized processing needed in many math language processing (MLP) tasks.
