@@ -57,7 +57,7 @@ Both twin datasets have a directory structure that mirrors the directory structu
 </table>
   
 <table style="width:100%">
-  <caption><A name="tab"><b>Table 4</b></A>: Attribute names and values of the Math element in Simple XML files</caption>
+  <caption><A name="tab4"><b>Table 4</b></A>: Attribute names and values of the Math element in Simple XML files</caption>
 <tr><th> Attribute Name </th> <th>Attribute Value and its Explanation</th> </tr>
 <tr> <td> mode </td> <td> the value is "inline" for unnumbered math expressions, and "display" for numbered equations</td> </tr>
 <tr> <td> xml:id </td> <td>  a unique ID of the math expression/equation within the <i>Simple-XML</i> files  </td> </tr>
