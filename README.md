@@ -1,7 +1,7 @@
 # math-dlmf-dataset
 A twin math dataset consisting of a per-expression data subset, and Simple-XML data subset (with marked-up sentences and marked-up math). 
 
-This twin dataset is derived from the Digital Library of Mathematical Functions (DLMF) of NIST (see http://dlmf.nist.gov)
+This twin dataset is derived from the <a href="http://dlmf.nist.gov"> Digital Library of Mathematical Functions</a> (DLMF) of NIST.
 
 The per-expression data subset is structured and labeled at fine granularity. For each math equation or expression in the DLMF, there is a record that provides a number of related elements, both contextual and annotational. The Simple-XML data subset consists of "Simple XML" files, where the contents of each Simple XML file are organized as marked-up sentences within the marked-up hierarchy of paragraphs/subsections/sections inherited form the original DLMF XML files (derived from LaTeX source files using the Bruce Miller's <a href="http://dlmf.nist.gov/LaTeXML/" title="" class="ltx_ref ltx_font_typewriter">LaTeXML</a> tool). Each sentence consists of its text and math XML-elements with their own unique IDs. 
 
