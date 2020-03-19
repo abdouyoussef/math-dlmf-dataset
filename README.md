@@ -27,6 +27,19 @@ Both twin datasets have a directory structure that mirrors the directory structu
 <tr> <td> context </td> <td> a number of name:value fields that provide context-identifying references and titles of the textual units containing the equation, such as subsection and section titles, as detailed in Table 2</td> </tr>
 </table>
 
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+</style>
+
 <table style="width:100%">
   <caption><b>Table 2</b>: Names, values and explanations of the <u>context</u> fields of equation records.</caption>
 <tr><th> Field Name </th> <th> { text-align: left;} Field Value and its Explanation</th> </tr>
