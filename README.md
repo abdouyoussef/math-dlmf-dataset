@@ -12,7 +12,7 @@ In the Simple-XML data subset, each section of the DLMF is a lean XML file, stru
 Both twin datasets have a directory structure that mirrors the directory structure of the DLMF, that is, each chapter is a directory of files, one file per section, where the chapters are numbered 1-36, and the section files also have numeric names. For example, file "2.3.txt" in per-expression data subset is the (text) file corresponding to Section 3 of Chapter 2, and containing the records of the equations and math expressions of Section 3 of Chapter 2 of the DLMF. Similarly, file "2.3.xml" in the Simple-XML data subset is the lean sentence-oriented XML file corresponding to the contents of <a href="https://dlmf.nist.gov/2.3">Section 3 of Chapter 2</a> of the DLMF.
 
 <table style="width:100%">
-  <caption>Names, values and explanations of the fields of equation records.</caption>
+  <caption><b>Table 1</b>: Names, values and explanations of the fields of equation records.</caption>
 <tr><th> Field Name </th> <th> Field Value and its Explanation </th> </tr>
 <tr> <td> equation-number </td> <td> the unique equation number of the equation in DLMF    </td> </tr>
 <tr> <td> permalink </td> <td> a unique URL of the equation </td> </tr>
