@@ -27,12 +27,12 @@ To make the format of the equation/exrepession records more "standard" and easie
 <tr> <td> symbols-used </td> <td> similar to the symbols-defined values above, except that each symbol has an additional idref:value field where the latter value provides the ID where the original definition of that symbol is located in the DLMF</td> </tr>
 <tr> <td> meaning </td> <td> the meaning or role of the symbol in question </td> </tr>
 <tr> <td> idref </td> <td> a unqiue ID reference to the location where a symbol is initially defined in the DLMF </td> </tr>
-<tr> <td> context </td> <td> a number of name:value fields that provide context-identifying references and titles of the textual units containing the equation, such as subsection and section titles, as detailed in Table 2</td> </tr>
+<tr> <td> context-references </td> <td> a number of name:value fields that provide context-identifying references and titles of the textual units containing the equation, such as subsection and section titles, as detailed in Table 2</td> </tr>
 </table>
 
 
 <table style="width:100%">
-  <caption><A name="tab2"><b>Table 2</b></A>: Names, values and explanations of the <b>context</b> fields of equation records</caption>
+  <caption><A name="tab2"><b>Table 2</b></A>: Names, values and explanations of the <b>context-references</b> fields of equation records</caption>
 <tr><th> Field Name </th> <th>Field Value and its Explanation</th> </tr>
   <tr> <td> sentence-xmlid </td> <td>  a unique sentence ID within the <i>Simple-XML</i> files </td> </tr>
 <tr> <td> sentence-num-in-section </td> <td>  the in-section number of the sentence containing the equation </td> </tr>
